@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="colorPickerApp">
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body ng-controller="MainCtrl">
+
+<h1>AngularJS Schnellstart ColorPicker</h1>
+<color-picker init-r="255"
+              init-g="0"
+              init-b="0"
+              init-a="1.0"
+              on-change="onColorChange(r,g,b,a)">
+</color-picker>
+
+<script src="lib/angular/angular.js"></script>
+<script src="scripts/colorPickerApp.js"></script>
+</body>
+</html>

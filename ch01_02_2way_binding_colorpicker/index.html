@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+</head>
+<body ng-init="r=255; g=0; b=123; a=0.7">
+
+R:<input type="range" min="0" max="255" step="1" ng-model="r"><br>
+G:<input type="range" min="0" max="255" step="1" ng-model="g"><br>
+B:<input type="range" min="0" max="255" step="1" ng-model="b"><br>
+A:<input type="range" min="0" max="1" step="0.01" ng-model="a">
+
+<div style="width: 300px; height: 100px; background-color: rgba({{ r }}, {{ g }}, {{ b }}, {{ a }});">
+</div>
+
+<script src="lib/angular/angular.js"></script>
+
+</body>
+</html>
