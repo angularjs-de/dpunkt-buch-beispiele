@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="bmApp">
+<head>
+    <meta charset="utf-8">
+    <title>BookMonkey</title>
+
+    <!--
+        ### Stylesheets ###
+    -->
+    <!-- 3rd-Party Libraries -->
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="lib/bootstrap-tokenfield/bootstrap-tokenfield.css">
+
+    <!-- BookMonkey Application -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>BookMonkey</h1>
+    </header>
+
+    <div class="bm-content" ng-view>
+    </div>
+
+    <!--
+        ### Scripts ###
+    -->
+    <!-- 3rd-Party Libraries -->
+    <script src="lib/jquery/jquery-1.10.2.min.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.min.js"></script>
+    <script src="lib/bootstrap-tokenfield/bootstrap-tokenfield.min.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <!-- BookMonkey Application -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/book_details.js"></script>
+    <script src="scripts/controllers/book_list.js"></script>
+    <script src="scripts/controllers/admin_book_list.js"></script>
+    <script src="scripts/controllers/admin_new_book.js"></script>
+    <script src="scripts/controllers/admin_edit_book.js"></script>
+    <script src="scripts/controllers/admin_delete_book.js"></script>
+    <script src="scripts/services/book_data.js"></script>
+    <script src="scripts/directives/tags.js"></script>
+    <script src="scripts/directives/tokenfield.js"></script>
+</body>
+</html>
