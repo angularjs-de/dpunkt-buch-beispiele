@@ -1,0 +1,22 @@
+body > div {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.draggable {
+    background-color: red;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 300px;
+}
+
+.swipe-active {
+    opacity: 0.5;
+}
+
+.ng-click-active {
+    background-color: green;
+}

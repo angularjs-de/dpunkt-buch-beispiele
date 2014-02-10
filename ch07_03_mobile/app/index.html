@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <title>AngularJS ngTouch Example</title>
+    <link rel="stylesheet" href="styles/draggable.css" media="all">
+</head>
+<body>
+
+<div class="draggable" draggable></div>
+
+<div ng-click="click=click+1">
+    <div>Click: {{click}}</div>
+</div>
+
+<div ng-swipe-right="right=right+1" ng-swipe-left="left=left+1">
+    <div>Swipe-right: {{right}}</div>
+    <div>Swipe-left: {{left}}</div>
+</div>
+
+<!-- Scripts -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.min.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/directives/draggable.js"></script>
+
+</body>
+</html>
