@@ -46,7 +46,7 @@ bmApp.factory('BookDataService', function() {
     srv.getBookByIsbn = function(isbn) {
         for (var i = 0, n = srv._books.length; i < n; i++) {
             if (isbn === srv._books[i].isbn) {
-                return srv._books[i];
+                return angular.copy(srv._books[i]);
             }
         }
 
